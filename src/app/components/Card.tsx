@@ -12,7 +12,7 @@ interface CardProps {
 
 export default function Card({id, user, time, likes, caption, mainImage, additionalImages }: CardProps) {
   return (
-    <div className="    max-w-sm   mx-auto bg-white text-gray-700">
+    <div className="    max-w-md   mx-auto bg-white text-gray-700">
      
 
       {/* Post */}
