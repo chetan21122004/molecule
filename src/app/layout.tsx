@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
        <div className=" p-1  ">
          {/* Header */}
-         <div className="flex w-md sticky z-10  bg-white border border-gray-200 rounded  top-0  mx-auto items-center justify-between p-4">
+         <div className="flex w-sm sticky z-10  bg-white border border-gray-200 rounded  top-0  mx-auto items-center justify-between p-4">
           <div className="text-2xl font-bold text-green-400">m</div>
           <div className="flex-1 mx-4">
             <div className="relative flex items-center">
@@ -41,7 +41,7 @@ export default function RootLayout({
 
 
         {/* Bottom Navigation */}
-        <div className="flex w-md mx-auto z-10 bg-gray-50 sticky bottom-0 gap-x-3  justify-between px-6 py-1 border border-gray-200 rounded">
+        <div className="flex w-sm mx-auto z-10 bg-gray-50 sticky bottom-0 gap-x-3  justify-between px-6 py-1 border border-gray-200 rounded">
           <button className="flex flex-col items-center">
             <Home className="h-6 w-6 text-green-400" />
             <span className="text-xs text-green-400 mt-1">Home</span>
