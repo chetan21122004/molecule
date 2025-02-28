@@ -37,10 +37,10 @@ export default function RootLayout({
             <User className="h-5 w-5 text-gray-500" />
           </div>
         </div>
-        <center>
+        <div className=" mx-auto">
           
         {children}
-        </center>
+        </div>
 
 
         {/* Bottom Navigation */}
