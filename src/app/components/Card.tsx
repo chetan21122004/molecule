@@ -12,11 +12,11 @@ interface CardProps {
 
 export default function Card({id, user, time, likes, caption, mainImage, additionalImages }: CardProps) {
   return (
-    <div className="    max-w-md   mx-auto bg-white text-gray-700">
+    <div className="    max-w-md px-1  mx-auto bg-white text-gray-700">
      
 
       {/* Post */}
-      <div className=" my-1 pb-2 border border-gray-200 rounded-md">
+      <div className=" my-1 w-full pb-2 border border-gray-200 rounded-md">
         {/* Post Header */}
         <div className="flex items-center p-3">
           <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center">
@@ -26,7 +26,7 @@ export default function Card({id, user, time, likes, caption, mainImage, additio
             <p className="font-semibold text-sm">{user}</p>
             <p className="text-xs text-gray-500">{time}</p>
           </div>
-          <button className="text-gray-500" id={id.toLocaleString() + "menu"}>
+          <button className="text-gray-500" id={id + "menu"}>
             <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none">
               <circle cx="5" cy="12" r="1.5" fill="currentColor" />
               <circle cx="12" cy="12" r="1.5" fill="currentColor" />
@@ -72,17 +72,17 @@ export default function Card({id, user, time, likes, caption, mainImage, additio
         {/* Action Buttons */}
         <div className="flex justify-between px-2 pt-2">
           <div className="flex space-x-4">
-            <button className="text-green-400" id={id.toLocaleString() + "like"}>
+            <button className="text-green-400" id={id + "like"}>
               <Heart className="h-6 w-6" />
             </button>
-            <button className="text-gray-500" id={id.toLocaleString() + "comment"}>
+            <button className="text-gray-500" id={id + "comment"}>
               <MessageCircle className="h-6 w-6" />
             </button>
-            <button className="text-gray-500" id={id.toLocaleString() + "share"}>
+            <button className="text-gray-500" id={id + "share"}>
               <Send className="h-6 w-6" />
             </button>
           </div>
-          <button className="text-gray-500" id={id.toLocaleString() + "save"}>
+          <button className="text-gray-500" id={id + "save"}>
             <Bookmark className="h-6 w-6" />
           </button>
         </div>
