@@ -1,7 +1,7 @@
-import { Heart, MessageCircle, Bookmark, Send, Home, Search, PlusSquare, User } from "lucide-react"
+import { Heart, MessageCircle, Bookmark, Send,  User } from "lucide-react"
 
 interface CardProps {
-  id:number
+  id: number;
   user: string;
   time: string;
   likes: number;
@@ -26,7 +26,7 @@ export default function Card({id, user, time, likes, caption, mainImage, additio
             <p className="font-semibold text-sm">{user}</p>
             <p className="text-xs text-gray-500">{time}</p>
           </div>
-          <button className="text-gray-500" id={id + "menu"}>
+          <button className="text-gray-500" id={id.toLocaleString() + "menu"}>
             <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none">
               <circle cx="5" cy="12" r="1.5" fill="currentColor" />
               <circle cx="12" cy="12" r="1.5" fill="currentColor" />
@@ -72,17 +72,17 @@ export default function Card({id, user, time, likes, caption, mainImage, additio
         {/* Action Buttons */}
         <div className="flex justify-between px-2 pt-2">
           <div className="flex space-x-4">
-            <button className="text-green-400" id={id + "like"}>
+            <button className="text-green-400" id={id.toLocaleString() + "like"}>
               <Heart className="h-6 w-6" />
             </button>
-            <button className="text-gray-500" id={id + "comment"}>
+            <button className="text-gray-500" id={id.toLocaleString() + "comment"}>
               <MessageCircle className="h-6 w-6" />
             </button>
-            <button className="text-gray-500" id={id + "share"}>
+            <button className="text-gray-500" id={id.toLocaleString() + "share"}>
               <Send className="h-6 w-6" />
             </button>
           </div>
-          <button className="text-gray-500" id={id + "save"}>
+          <button className="text-gray-500" id={id.toLocaleString() + "save"}>
             <Bookmark className="h-6 w-6" />
           </button>
         </div>

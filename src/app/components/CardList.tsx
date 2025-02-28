@@ -22,6 +22,7 @@ const CardList: React.FC<CardListProps> = ({ cards }) => {
         <Card
           key={card.id}
           user={card.user}
+          id={card.id}
           time={card.time}
           likes={card.likes}
           caption={card.caption}
